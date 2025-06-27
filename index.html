@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <style>
         body {
@@ -16,7 +15,7 @@
             background-color: #f8f9fa;
         }
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x800/2c3e50/ffffff?text=Mauao');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://filmbayofplenty.com/wp-content/uploads/2022/08/film-bop-mountains-mauao-thumb.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -52,7 +51,6 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header -->
     <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <h1 class="text-xl md:text-2xl font-bold text-blue-600">Te Raupatu o Tauranga Moana</h1>
@@ -66,7 +64,6 @@
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#timeline" class="block py-2 text-gray-600 hover:text-blue-600 transition">Timeline</a>
             <a href="#summary" class="block py-2 text-gray-600 hover:text-blue-600 transition">Report Summary</a>
@@ -76,50 +73,42 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero-bg text-white h-[60vh] flex flex-col justify-center items-center text-center p-6">
             <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 shadow-text">Understanding the Raupatu</h2>
             <p class="text-lg md:text-xl max-w-3xl mx-auto shadow-text">An interactive guide to the Waitangi Tribunal's report on the Tauranga confiscation claims (Wai 215).</p>
         </section>
 
-        <!-- Timeline Section -->
         <section id="timeline" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h3 class="text-3xl font-bold text-center mb-12">A Timeline of Events</h3>
                 <div class="relative max-w-3xl mx-auto">
                     <div class="absolute left-4 top-0 h-full w-1 border-l-2 border-blue-200"></div>
                     <div class="space-y-12">
-                        <!-- Timeline Item 1 -->
                         <div class="relative pl-12 timeline-item">
                             <h4 class="font-bold text-xl text-blue-600">1840 - 1864</h4>
                             <h5 class="font-semibold text-lg mt-1">Early Interactions & The Treaty</h5>
                             <p class="mt-2 text-gray-600">Following the signing of the Treaty of Waitangi, relations between Tauranga Māori and the Crown develop. However, growing tensions over land and sovereignty across the North Island set the stage for future conflict.</p>
                         </div>
-                        <!-- Timeline Item 2 -->
                         <div class="relative pl-12 timeline-item">
                             <h4 class="font-bold text-xl text-blue-600">1864</h4>
                             <h5 class="font-semibold text-lg mt-1">War in Tauranga</h5>
                             <p class="mt-2 text-gray-600">Crown forces invade Tauranga. The key battles of Pukehinahina (Gate Pā) and Te Ranga take place. Despite a famous Māori victory at Pukehinahina, the campaign ends in defeat for Tauranga iwi at Te Ranga.</p>
                         </div>
-                        <!-- Timeline Item 3 -->
                         <div class="relative pl-12 timeline-item">
                             <h4 class="font-bold text-xl text-blue-600">1865 - 1868</h4>
                             <h5 class="font-semibold text-lg mt-1">Raupatu: The Confiscation</h5>
                             <p class="mt-2 text-gray-600">The Crown confiscates a vast area of Tauranga land under the New Zealand Settlements Act 1863. The initial confiscation district covers approximately 290,000 acres, fundamentally altering land ownership and the lives of the tangata whenua.</p>
                         </div>
-                         <!-- Timeline Item 4 -->
-                        <div class="relative pl-12 timeline-item">
+                         <div class="relative pl-12 timeline-item">
                             <h4 class="font-bold text-xl text-blue-600">1867</h4>
                             <h5 class="font-semibold text-lg mt-1">The Bush Campaign</h5>
                             <p class="mt-2 text-gray-600">Crown forces conduct a campaign to enforce the raupatu, targeting Māori communities in the forested interior who resisted the confiscation and land surveys. This leads to further conflict and displacement.</p>
                         </div>
-                        <!-- Timeline Item 5 -->
                         <div class="relative pl-12 timeline-item">
                             <h4 class="font-bold text-xl text-blue-600">1927</h4>
                             <h5 class="font-semibold text-lg mt-1">The Sim Commission</h5>
                             <p class="mt-2 text-gray-600">A Royal Commission investigates historical land confiscations. It concludes the Tauranga confiscation was "justified and... not excessive," a finding that causes long-standing grievance and is later challenged.</p>
                         </div>
-                        <!-- Timeline Item 6 -->
                         <div class="relative pl-12 timeline-item">
                             <h4 class="font-bold text-xl text-blue-600">2004</h4>
                             <h5 class="font-semibold text-lg mt-1">Waitangi Tribunal Report</h5>
@@ -130,7 +119,6 @@
             </div>
         </section>
 
-        <!-- Report Summary Section -->
         <section id="summary" class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h3 class="text-3xl font-bold text-center mb-12">Understanding the Report</h3>
@@ -163,19 +151,16 @@
             </div>
         </section>
 
-        <!-- Interactive Map Section -->
         <section id="map" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h3 class="text-3xl font-bold text-center mb-4">The Lands of Tauranga Moana</h3>
                 <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">This map shows the approximate rohe (territories) of different hapū around 1865, based on the report. Click on a polygon to learn more about the iwi and hapū of that area.</p>
                 <div class="max-w-4xl mx-auto bg-gray-100 p-2 rounded-lg shadow-inner">
-                    <!-- Leaflet Map Container -->
                     <div id="leaflet-map" class="h-[50vh] md:h-[65vh] w-full rounded-lg"></div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section id="faq" class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-6 max-w-3xl">
                 <h3 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h3>
@@ -212,7 +197,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2024 Interactive Guide. Content based on the Wai 215 Waitangi Tribunal Report.</p>
@@ -221,7 +205,6 @@
         </div>
     </footer>
 
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script>
         // Mobile Menu Toggle
@@ -275,7 +258,7 @@
             ngatiHangarau: { coords: [[-37.70, 176.10], [-37.74, 176.07], [-37.84, 176.12], [-37.78, 176.15]], title: "Ngāti Hangarau", iwi: "Ngāti Ranginui", options: { color: '#dc2626', fillColor: '#f87171', fillOpacity: 0.5 } },
             ngaiTamarawaho: { coords: [[-37.68, 176.13], [-37.72, 176.10], [-37.82, 176.15], [-37.75, 176.18]], title: "Ngāi Tamarawaho", iwi: "Ngāti Ranginui", options: { color: '#dc2626', fillColor: '#f87171', fillOpacity: 0.5 } },
             pirirakau: { coords: [[-37.67, 176.05], [-37.70, 176.00], [-37.80, 176.04], [-37.75, 176.09]], title: "Pirirākau", iwi: "Ngāti Ranginui", options: { color: '#dc2626', fillColor: '#f87171', fillOpacity: 0.5 } },
-            wairoaHapu: { coords: [[-37.70, 176.06], [-37.74, 176.02], [-37.88, 176.08], [-37.80, 176.11]], title: "Wairoa Hapu (Ngāti Kahu, etc.)", iwi: "Ngāti Ranginui", options: { color: '#dc2626', fillColor: '#f87171', fillOpacity: 0.5 } },
+            wairoaHapu: { coords: [[-37.70, 176.06], [-37.74, 176.02], [-37.88, 176.08], [-37.80, 176.11]], title: "Wairoa Hapū (Ngāti Kahu, etc.)", iwi: "Ngāti Ranginui", options: { color: '#dc2626', fillColor: '#f87171', fillOpacity: 0.5 } },
 
             // Other iwi (Green/Yellow)
             waitaha: { coords: [[-37.78, 176.22], [-37.82, 176.18], [-37.86, 176.25], [-37.81, 176.28]], title: "Waitaha", iwi: "Te Arawa", options: { color: '#16a34a', fillColor: '#4ade80', fillOpacity: 0.5 } },
